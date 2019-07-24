@@ -1,0 +1,331 @@
+/*Top NAV*/
+.top-nav {
+  width: 100%;
+  background: black;
+  padding: 0;
+  margin: 0;
+}
+
+.top-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /* takes out bullet points for items at the top */
+  overflow: hidden;
+  /*hides overflow */
+  li {
+    list-style: none;
+    float: left;
+    /* floats like inline block */
+    padding: 10px 15px;
+    color: $white;
+    font-size: 13px;
+  }
+
+  li:first-child {
+    padding-left: 0;
+    /* takes out padding for Atlanta */
+  }
+
+  li i {
+    padding-right: 8px;
+    /*padding for icon*/
+  }
+  a{
+    color:white;
+    &:hover{          /*changes the color to $light-gray */
+      color:lightblue;
+   }
+  }
+}
+
+.top-list-right {
+  /* Client Login stuff */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+  float: right;
+
+  li {
+    list-style: none;
+    float: left;
+    padding: 10px 15px;
+    color: $white;
+    font-size: 13px;
+  }
+
+  a {
+    color: $white;
+    color:white;
+    &:hover{          /*changes the color to $light-gray */
+      color:lightblue;
+   }
+    /* link color */
+  }
+}
+/* TOP BAR  ***********/
+.top-bar {
+  color: White;
+  h3{
+    min-width: 222px;
+  }
+  span {
+    color: blue;
+    /*color for REED Hosting*/
+    /* background:gray;*/
+    padding: 5px 9px;
+    margin-right: 4px;
+    font-family: sans-serif;
+
+  }
+
+  li {
+    text-transform: uppercase;
+    float: left;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: blue;
+  }
+
+  a.current {
+    color: blue;
+    border-bottom: 3px solid;
+  }
+  top-bar-right{
+    min-width: 609px;
+  }
+}
+/*SHOW CASE */
+.showcase {
+  background: url("https://res.cloudinary.com/dnj3ilqbx/image/upload/v1563085527/new_hosting/showcase2.jpg")  no-repeat  center center fixed ;
+  -webkit-background-size:cover; /*TO MAKE THE IMAGE STRETCH THE WIDTH OF BACKGROUND*/
+  -moz-background-size:cover;
+  -moz-background-size:cover;
+  background-size: cover;
+  min-height: 565px;
+  width: 100%;
+  color: $white;
+
+  .showcase-box {
+    padding: 20px 30px;
+    margin-top: 30px;
+    background: blue;
+    color: $white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+
+  p {
+    border-bottom: 1px #ccc solid;
+    padding-bottom: 10px;
+  }
+}
+
+.showcase-box-bottom {     /* BOTTOM HALF OF FLOAT AREA */
+  background: darkgrey;
+  padding: 10px 30px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  .pricing span {       /* STARTING AT */
+    font-size: 35px;
+    font-weight: bold;
+}
+    .start-link {           /* Get Started Now */
+
+      padding-top: 20px;
+      color:white;
+
+      a {
+        color: white;
+
+      }
+    }
+  }
+}
+
+/* Domain Search */
+.domain-search{
+  background: black;
+  padding:30px 20px 20px 20px;
+  border-bottom:2px #ccc solid;
+  margin-bottom:30px;
+
+  .domain-form{
+    input, .input-group-label{
+      border-color:lightgray;
+    }
+
+  }
+}
+
+/* Package Boxes */
+.p-box-1,.p-box-2,.p-box-3{
+  text-align: center;
+  margin:10px 10px 10px 10px; /* SPACE AROUND */
+  .fa{
+    font-size:60px;
+  }
+
+  .features{
+    margin:20px 0 30px 0;
+
+    li{
+      padding:10px 0 10px 0;
+      border-bottom:#ccc solid 1px;
+    }
+  }
+}
+.p-box-1{
+  .fa{
+    color:blue;
+  }
+  .pricing span{
+    font-size:35px;
+    font-weight:bold;
+    color:blue;
+  }
+  .button{
+    background: blue;
+  }
+}
+.p-box-2{
+  .fa{
+    color:grey;
+  }
+  .pricing span{
+    font-size:35px;
+    font-weight:bold;
+    color:grey;
+  }
+}
+.p-box-3{
+  .fa{
+    color:black;
+  }
+  .pricing span{
+    font-size:35px;
+    font-weight:bold;
+    color:black;
+  }
+  .button{
+    background: black;
+  }
+}
+
+/* Section A */
+.section-a{
+  margin-top:30px;
+  padding:50px 20px;
+  background:$light-gray;
+}
+
+/* Section B */
+.section-b{
+  background:black;
+  color:$white;
+  padding:50px 20px;
+  text-align: center;
+}
+/* Section c */
+.section-c{
+  background:blue;
+  color:$white;
+  padding:50px 0;
+  text-align: center;
+
+  .fa{
+    font-size:90px;
+  }
+}
+.callout{
+  overflow:auto;
+}
+
+.remember{
+  margin-right:4px;
+}
+
+footer{
+  padding: 40px 20px;
+}
+.copy-right{
+  padding-left: 10px;
+  text-align: center;
+
+}
+.company{
+  text-align: center;
+  a{
+    color:blue;
+    &:hover{           /*changes the color to $light-gray */
+      color:darkgrey;
+   }
+  }
+
+
+}
+.support{
+  text-align: center;
+  a{
+    color:blue;
+    &:hover{          /*changes the color to $light-gray */
+      color:darkgrey;
+   }
+  }
+
+}
+/*********ABOUT PAGE*****************************/
+.about-section-b{
+  background:black;
+  color:$white;
+  padding:50px 20px;
+  text-align: center;
+}
+
+.how-are-we-different-a{
+  margin-top:30px;
+  padding:50px 20px;
+  background:white;
+  img{
+    // padding-right: 5px;
+    // padding-left: 120px;
+    padding-bottom: 20px;
+    align-content: space-around;
+  }
+}
+.ups{
+  padding: 20px 30px;
+  margin-top: 30px;
+  background: blue;
+  color: $white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/*********CONTACT PAGE*****************************/
+
+.contact{
+  padding: 20px 30px;
+  margin-top: 30px;
+  margin-bottom:50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background: lightgray;
+  color: $white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+   .button {
+    background-color: blue;
+  }
+}
